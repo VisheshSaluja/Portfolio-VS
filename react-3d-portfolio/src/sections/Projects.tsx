@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
 const projects = [
   {
@@ -42,24 +43,35 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
-          <motion.a
+          <Tilt
             key={idx}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block bg-gray-800 rounded-xl p-6 border border-gray-700 hover:shadow-cyan-500/40 shadow-lg transition duration-300 hover:scale-105"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: idx * 0.2 }}
-            viewport={{ once: true }}
+            glareEnable={true}
+            glareMaxOpacity={0.15}
+            glareColor="#14b8a6"
+            glarePosition="all"
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
+            transitionSpeed={800}
+            className="rounded-xl"
           >
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              {project.title}
-            </h3>
-            <p className="text-sm text-cyan-300 mt-1">{project.tech}</p>
-            <p className="mt-3 text-gray-300">{project.description}</p>
-            <p className="mt-4 text-cyan-400 font-medium">View Project →</p>
-          </motion.a>
+            <motion.a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-800 rounded-xl p-6 border border-gray-700 hover:shadow-cyan-500/40 shadow-lg transition duration-300 hover:scale-[1.03]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-xl md:text-2xl font-semibold text-white">
+                {project.title}
+              </h3>
+              <p className="text-sm text-cyan-300 mt-1">{project.tech}</p>
+              <p className="mt-3 text-gray-300">{project.description}</p>
+              <p className="mt-4 text-cyan-400 font-medium">View Project →</p>
+            </motion.a>
+          </Tilt>
         ))}
       </div>
     </div>
