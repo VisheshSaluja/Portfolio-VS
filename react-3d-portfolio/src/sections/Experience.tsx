@@ -8,7 +8,9 @@ const experiences = [
     description: [
       "Led 4 interns on ML workflows for geospatial data.",
       "Added support for PostgreSQL, MySQL, and H2 with CLI integration.",
-      "Improved UI responsiveness by 30% and reduced model runtime by 25%.",
+      "Implemented an in-app code editor and improved UI responsiveness by 30%.",
+      "Reduced processing time by 25% in Snow/Ozone models.",
+      "Ran large-scale workflows on Hopper supercomputer with 20% speed-up.",
     ],
   },
   {
@@ -27,6 +29,24 @@ const experiences = [
     description: [
       "Built models improving accuracy by 18%.",
       "Delivered clustering and regression boosting success rate by 20%.",
+    ],
+  },
+  {
+    title: "Software Engineer Internn",
+    company: "Accops Systems",
+    period: "Jan – Mar 2022",
+    description: [
+      "Worked on backend logic using Python and C++.",
+      "Reduced bug resolution time by 30%.",
+    ],
+  },
+  {
+    title: "Cloud Trainee",
+    company: "Tech Explica",
+    period: "Jul – Aug 2021",
+    description: [
+      "Deployed multiple websites on AWS.",
+      "Increased deployment efficiency by 20%.",
     ],
   },
 ];
