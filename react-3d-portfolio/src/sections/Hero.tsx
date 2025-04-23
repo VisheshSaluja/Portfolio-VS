@@ -1,21 +1,17 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Float } from "@react-three/drei";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
     <div className="relative h-full w-full bg-gradient-to-br from-gray-900 to-black">
       <Canvas camera={{ position: [0, 0, 6.5] }}>
-        {" "}
-        {/* Pulled camera back a bit more */}
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Float speed={2} rotationIntensity={1.5} floatIntensity={2}>
           <mesh scale={1.55}>
-            {" "}
-            {/* ⬅️ Slightly smaller than before */}
-            <torusKnotGeometry args={[1.4, 0.5, 160, 80]} />{" "}
-            {/* Nicely balanced */}
+            <torusKnotGeometry args={[1.4, 0.5, 160, 80]} />
             <meshStandardMaterial color="#14b8a6" wireframe />
           </mesh>
         </Float>
@@ -36,9 +32,22 @@ const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="mt-4 text-lg md:text-2xl max-w-xl text-white"
+          className="mt-4 text-lg md:text-2xl max-w-xl text-white h-[32px]"
         >
-          Software Developer · ML Enthusiast · Full-Stack Engineer
+          <Typewriter
+            words={[
+              "Software Developer",
+              "ML Enthusiast",
+              "Full-Stack Engineer",
+              "Open Source Contributor",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={50}
+            deleteSpeed={30}
+            delaySpeed={1500}
+          />
         </motion.p>
       </div>
     </div>
