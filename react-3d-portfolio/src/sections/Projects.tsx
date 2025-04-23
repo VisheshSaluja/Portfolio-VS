@@ -3,10 +3,20 @@ import Tilt from "react-parallax-tilt";
 
 const projects = [
   {
+    title: "Geoweaver – Open Source Earth Science Workflow Platform",
+    tech: "Java · Spring Boot · PostgreSQL · Angular",
+    description:
+      "Major contributor to NASA's open-source tool for managing scientific workflows, running ML jobs, and handling geospatial data pipelines.",
+    link: "https://github.com/ESIPFed/Geoweaver",
+    demo: "https://geoweaver.dev", // or leave this field out if there's no hosted demo
+  },
+  {
     title: "Mason Critique (HackFax 2nd Place)",
     tech: "Next.js · Firebase · Google Auth",
-    description: "GPA dashboards, real-time reviews, auto-filled course data.",
+    description:
+      "Student feedback dashboards, real-time course and Professor reviews.",
     link: "https://github.com/VisheshSaluja/Mason-Critique",
+    demo: "https://gmu-rmp.web.app",
   },
   {
     title: "MindMate – AI Mental Wellness Bot",
@@ -54,10 +64,7 @@ const Projects = () => {
             transitionSpeed={800}
             className="rounded-xl"
           >
-            <motion.a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.div
               className="block bg-gray-800 rounded-xl p-6 border border-gray-700 hover:shadow-cyan-500/40 shadow-lg transition duration-300 hover:scale-[1.03]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -69,8 +76,28 @@ const Projects = () => {
               </h3>
               <p className="text-sm text-cyan-300 mt-1">{project.tech}</p>
               <p className="mt-3 text-gray-300">{project.description}</p>
-              <p className="mt-4 text-cyan-400 font-medium">View Project →</p>
-            </motion.a>
+
+              <div className="mt-4 flex gap-4 flex-wrap">
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-400 hover:underline font-medium"
+                  >
+                    🔗 Live Demo
+                  </a>
+                )}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:underline font-medium"
+                >
+                  💻 View Code
+                </a>
+              </div>
+            </motion.div>
           </Tilt>
         ))}
       </div>
