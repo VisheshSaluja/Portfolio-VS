@@ -1,3 +1,4 @@
+/// <reference types="@react-three/fiber" />
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Float } from "@react-three/drei";
 import { motion } from "framer-motion";

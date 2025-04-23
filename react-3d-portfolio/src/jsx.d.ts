@@ -1,5 +1,5 @@
-/// <reference types="react" />
-import { ThreeElements } from '@react-three/fiber'
+import { JSX } from "react";
+import { ThreeElements } from "@react-three/fiber";
 
 declare global {
   namespace JSX {

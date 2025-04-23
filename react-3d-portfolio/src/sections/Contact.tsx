@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
-import { useRef, useState } from "react";
+// import { useRef } from "react"; // ✅ only useRef is required
 
 const Contact = () => {
-  //   const form = useRef<HTMLFormElement>(null);
-
   return (
     <div className="max-w-4xl mx-auto px-6 text-center">
       <motion.h2
