@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { useRef, useState } from "react";
 
 const Contact = () => {
+  //   const form = useRef<HTMLFormElement>(null);
+
   return (
     <div className="max-w-4xl mx-auto px-6 text-center">
       <motion.h2
@@ -25,11 +28,37 @@ const Contact = () => {
         to a conversation!
       </motion.p>
 
+      {/* Resume buttons */}
       <motion.div
-        className="flex flex-wrap justify-center gap-6 text-cyan-400 text-3xl"
+        className="mt-10 flex flex-col items-center gap-4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <a
+          href="/Resume_v.pdf"
+          download
+          className="bg-cyan-500 hover:bg-cyan-400 text-black font-medium px-6 py-3 rounded-lg shadow transition"
+        >
+          📄 Download Resume
+        </a>
+        <a
+          href="/Resume_v.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-cyan-400 hover:text-cyan-300"
+        >
+          Or view it in a new tab →
+        </a>
+      </motion.div>
+
+      {/* Social links */}
+      <motion.div
+        className="mt-12 flex flex-wrap justify-center gap-6 text-cyan-400 text-3xl"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
+        transition={{ delay: 0.7, duration: 0.6 }}
         viewport={{ once: true }}
       >
         <a
@@ -62,7 +91,7 @@ const Contact = () => {
         className="mt-10 text-sm text-gray-500"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.8 }}
         viewport={{ once: true }}
       >
         © {new Date().getFullYear()} Vishesh Saluja. All rights reserved.
