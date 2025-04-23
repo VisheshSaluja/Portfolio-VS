@@ -23,7 +23,7 @@ const App = () => {
           <Hero />
         </section>
 
-        <section id="about" className="min-h-screen w-full snap-start py-24">
+        <section id="about" className="w-full snap-start py-16 md:py-20">
           <About />
         </section>
 

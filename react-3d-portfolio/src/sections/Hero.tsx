@@ -33,7 +33,7 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-4 text-lg md:text-2xl max-w-xl"
         >
-          Software Developer · ML Enthusiast · Research Assistant @ NASA
+          Software Developer · ML Enthusiast · Full-Stack Engineer
         </motion.p>
       </div>
     </div>

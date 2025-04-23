@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import { FaCode, FaGuitar, FaGlobeAsia } from "react-icons/fa";
+import { GiBlackBelt } from "react-icons/gi";
 
 const About = () => {
   return (
-    <div className="max-w-5xl mx-auto px-6">
+    <div className="max-w-4xl mx-auto px-6 text-center">
       <motion.h2
-        className="text-3xl md:text-5xl font-bold text-center text-cyan-400 mb-10"
+        className="text-3xl md:text-5xl font-bold text-cyan-400 mb-10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -14,31 +16,32 @@ const About = () => {
       </motion.h2>
 
       <motion.div
-        className="text-lg md:text-xl text-gray-300 space-y-6 leading-relaxed"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        className="text-lg md:text-xl text-gray-300 leading-relaxed space-y-4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
         viewport={{ once: true }}
       >
         <p>
-          I’m a passionate developer, researcher, and machine learning
-          enthusiast currently pursuing my Master’s in Computer Science at
-          George Mason University.
+          Hey — I’m Vishesh!{" "}
+          <FaCode className="inline-block text-cyan-400 ml-1" /> I love building
+          cool stuff with code and turning ideas into experiences that actually{" "}
+          <em>work</em>. I’m big on learning new things, solving real problems,
+          and keeping things clean (in code and design!).
         </p>
+
         <p>
-          With experience at NASA ESIP as a Software Developer and Research
-          Assistant, I’ve built machine learning workflows for geospatial data,
-          led a team of interns, and optimized large-scale supercomputer
-          pipelines.
+          Outside of tech, I’ve kicked my way to an international taekwondo
+          medal <GiBlackBelt className="inline-block text-yellow-400" /> jam on
+          the guitar when I can{" "}
+          <FaGuitar className="inline-block text-pink-400" /> and chase sunsets
+          wherever I travel{" "}
+          <FaGlobeAsia className="inline-block text-green-400" />.
         </p>
+
         <p>
-          My work spans cloud platforms like AWS and Azure, full-stack
-          development with React and Angular, and deep learning projects in
-          healthcare and climate analysis.
-        </p>
-        <p>
-          Outside of tech, I’ve been recognized as an International Taekwondo
-          Medalist and honored multiple times as Student of the Year.
+          Basically, I like a good challenge — whether it’s debugging or board
+          breaking.
         </p>
       </motion.div>
     </div>
