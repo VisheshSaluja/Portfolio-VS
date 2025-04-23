@@ -1,3 +1,6 @@
+import ScrollProgress from "./components/ScrollProgress";
+import Navbar from "./components/Navbar";
+
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -8,8 +11,14 @@ import Contact from "./sections/Contact";
 const App = () => {
   return (
     <>
-      {/* Scrollable Resume Sections */}
-      <main className="scroll-smooth overflow-x-hidden">
+      {/* Scroll progress bar on top */}
+      <ScrollProgress />
+
+      {/* Sticky navbar */}
+      <Navbar />
+
+      {/* All resume sections */}
+      <main className="scroll-smooth overflow-x-hidden pt-16">
         <section id="hero" className="h-screen w-full snap-start">
           <Hero />
         </section>
