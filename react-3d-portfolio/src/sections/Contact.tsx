@@ -35,14 +35,14 @@ const Contact = () => {
         viewport={{ once: true }}
       >
         <a
-          href="/Resume_v.pdf"
+          href="/Portfolio-VS/Resume_Vishesh.pdf"
           download
           className="bg-cyan-500 hover:bg-cyan-400 text-black font-medium px-6 py-3 rounded-lg shadow transition"
         >
           📄 Download Resume
         </a>
         <a
-          href="/Resume_v.pdf"
+          href="/Portfolio-VS/Resume_Vishesh.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="underline text-cyan-400 hover:text-cyan-300"
