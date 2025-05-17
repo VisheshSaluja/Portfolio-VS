@@ -28,8 +28,8 @@ const experiences = [
     company: "QBurst Technologies",
     period: "Jul – Aug 2022",
     description: [
-      "Improved BigQuery performance by 15%.",
-      "Built documentation and trained teams, boosting output by 10%.",
+      "Improved BigQuery query performance by 15%. Conducted training and documentation improving team output by 10%.",
+      "Assisted in developing a pipeline to migrate companies Database from Amazon RedShift to BigQuery.",
     ],
   },
   {
@@ -37,8 +37,8 @@ const experiences = [
     company: "DynPro",
     period: "Apr – Jun 2022",
     description: [
-      "Built models improving accuracy by 18%.",
-      "Delivered clustering and regression boosting success rate by 20%.",
+      "Optimized recommendation systems, leading to a 6.5% gain in prediction accuracy.",
+      "Delivered regression and clustering results boosting success rate by 20%.",
     ],
   },
   {
@@ -46,8 +46,7 @@ const experiences = [
     company: "Accops Systems",
     period: "Jan – Mar 2022",
     description: [
-      "Worked on backend logic using Python and C++.",
-      "Reduced bug resolution time by 30%.",
+      "Worked on backend logic using Python and C++ and Reduced bug resolution time by 15%",
     ],
   },
   {
@@ -55,8 +54,8 @@ const experiences = [
     company: "Tech Explica",
     period: "Jul – Aug 2021",
     description: [
-      "Deployed multiple websites on AWS.",
-      "Increased deployment efficiency by 20%.",
+      "Deployed multiple websites on AWS using EC2 and S3.",
+      "Increased deployment efficiency by 20% by implementing CI/CD pipelines with GitHub Actions.",
     ],
   },
 ];
