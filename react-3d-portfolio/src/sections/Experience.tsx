@@ -2,6 +2,16 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Research Assistant – Generative Deep Learning",
+    company: "George Mason University",
+    period: "Present",
+    description: [
+      "Working on molecular graph generation using MolGAN to design novel, valid molecules.",
+      "Integrating Birdie-style pretraining objectives to enhance diversity and synthesizability",
+      "Aiming to generate high-quality molecular candidates suitable for lab-scale development and drug discovery pipelines.",
+    ],
+  },
+  {
     title: "Software Developer & Research Assistant",
     company: "NASA/ESIP",
     period: "Feb – Oct 2024",
