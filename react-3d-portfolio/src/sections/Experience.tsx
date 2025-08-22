@@ -2,6 +2,17 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Software Developer",
+    company: "College of Public Health - George Mason University",
+    period: "Present",
+    description: [
+      "Building a secure Flask-based app for bruise image data set segregation to assist department-wide research.",
+      "Developed frontend, API integrations, and robust backend for managing bruise image data.",
+      "Working on the backend of a Bruise Detection Application using YOLO; integrating 3D human body visualization to display patient injuries.",
+      "Application intended for use by healthcare professionals and legal proceedings related to domestic violence cases",
+    ],
+  },
+  {
     title: "Research Assistant – Generative Deep Learning",
     company: "George Mason University",
     period: "Present",
