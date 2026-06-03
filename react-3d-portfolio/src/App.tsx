@@ -1,52 +1,22 @@
-import ScrollProgress from "./components/ScrollProgress";
 import Navbar from "./components/Navbar";
-
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 
 const App = () => {
   return (
-    <>
-      {/* Scroll progress bar on top */}
-      <ScrollProgress />
-
-      {/* Sticky navbar */}
+    <div className="relative">
       <Navbar />
-
-      {/* All resume sections */}
-      <main className="scroll-smooth overflow-x-hidden pt-16">
-        <section id="hero" className="h-screen w-full snap-start">
-          <Hero />
-        </section>
-
-        <section id="about" className="w-full snap-start py-16 md:py-20">
-          <About />
-        </section>
-
-        <section
-          id="experience"
-          className="min-h-screen w-full snap-start py-24"
-        >
-          <Experience />
-        </section>
-
-        <section id="projects" className="min-h-screen w-full snap-start py-24">
-          <Projects />
-        </section>
-
-        <section id="skills" className="min-h-screen w-full snap-start py-24">
-          <Skills />
-        </section>
-
-        <section id="contact" className="min-h-screen w-full snap-start py-24">
-          <Contact />
-        </section>
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
       </main>
-    </>
+    </div>
   );
 };
 

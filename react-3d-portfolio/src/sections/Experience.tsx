@@ -1,114 +1,130 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const experiences = [
   {
-    title: "Software Developer",
-    company: "College of Public Health - George Mason University",
-    period: "Present",
-    description: [
-      "Building a secure Flask-based app for bruise image data set segregation to assist department-wide research.",
-      "Developed frontend, API integrations, and robust backend for managing bruise image data.",
-      "Working on the backend of a Bruise Detection Application using YOLO; integrating 3D human body visualization to display patient injuries.",
-      "Application intended for use by healthcare professionals and legal proceedings related to domestic violence cases",
+    title: "AI Software Engineer",
+    qualifier: "Forward Deployed",
+    company: "ProspectIntel",
+    period: "Jan 2026 – Present",
+    bullets: [
+      "Building a production AI sales intelligence platform using agentic workflows + RAG, enabling real-time prospect research across multiple users and concurrent queries.",
+      "Engineered a RAG-based intelligence pipeline using hybrid retrieval over PostgreSQL, improving reliability from 70% to 95% and reducing latency by 2–3x.",
+      "Built evaluation and observability pipelines (Langfuse) to track prompt performance, latency, and token usage, reducing token consumption by 35%.",
     ],
   },
   {
-    title: "Research Assistant – Generative Deep Learning",
-    company: "George Mason University",
-    period: "Present",
-    description: [
-      "Working on molecular graph generation using MolGAN to design novel, valid molecules.",
-      "Integrating Birdie-style pretraining objectives to enhance diversity and synthesizability",
-      "Aiming to generate high-quality molecular candidates suitable for lab-scale development and drug discovery pipelines.",
+    title: "AI Software Developer",
+    company: "George Mason University — College of Public Health",
+    period: "Jun 2025 – Present",
+    bullets: [
+      "Engineered a HIPAA-compliant full-stack AI platform (FastAPI, React/Next.js) deployed across multiple universities, used by 50+ clinicians for real-time medical imaging workflows.",
+      "Built a YOLO-based bruise detection pipeline with dynamic model routing and integrated Unity 3D body mapping for clinical visualization.",
+      "Developed LLM summarization pipelines for structured clinical note generation and designed real-time API-driven interfaces.",
     ],
   },
   {
-    title: "Software Developer & Research Assistant",
-    company: "NASA/ESIP",
-    period: "Feb – Oct 2024",
-    description: [
-      "Led 4 interns on ML workflows for geospatial data.",
-      "Added support for PostgreSQL, MySQL, and H2 with CLI integration.",
-      "Implemented an in-app code editor and improved UI responsiveness by 30%.",
-      "Reduced processing time by 25% in Snow/Ozone models.",
-      "Ran large-scale workflows on Hopper supercomputer with 20% speed-up.",
+    title: "Software Engineer (ML)",
+    company: "Geoweaver — NASA / ESIP",
+    period: "Feb 2024 – Jan 2025",
+    bullets: [
+      "Built and productionized scalable ML pipelines for TB-scale geospatial datasets — snow water estimation, wildfire detection, ozone analysis.",
+      "Optimized workflows on HPC systems (Hopper), improving compute efficiency by 20% and contributing to a 25% increase in monthly active users.",
+      "Mentored 4 interns in ML experimentation and system design, co-authoring a peer-reviewed research publication.",
     ],
   },
   {
-    title: "Data Science Intern",
-    company: "QBurst Technologies",
-    period: "Jul – Aug 2022",
-    description: [
-      "Improved BigQuery query performance by 15%. Conducted training and documentation improving team output by 10%.",
-      "Assisted in developing a pipeline to migrate companies Database from Amazon RedShift to BigQuery.",
-    ],
-  },
-  {
-    title: "ML Intern",
-    company: "DynPro",
-    period: "Apr – Jun 2022",
-    description: [
-      "Optimized recommendation systems, leading to a 6.5% gain in prediction accuracy.",
-      "Delivered regression and clustering results boosting success rate by 20%.",
-    ],
-  },
-  {
-    title: "Software Engineer Internn",
-    company: "Accops Systems",
-    period: "Jan – Mar 2022",
-    description: [
-      "Worked on backend logic using Python and C++ and Reduced bug resolution time by 15%",
-    ],
-  },
-  {
-    title: "Cloud Trainee",
-    company: "Tech Explica",
-    period: "Jul – Aug 2021",
-    description: [
-      "Deployed multiple websites on AWS using EC2 and S3.",
-      "Increased deployment efficiency by 20% by implementing CI/CD pipelines with GitHub Actions.",
+    title: "AI/ML Engineer",
+    company: "Tech Solutions",
+    period: "Nov 2021 – Jul 2023",
+    bullets: [
+      "Built real-time fraud detection systems using Flask APIs and XGBoost, processing 10M+ financial transactions/month and reducing high-risk exposure by 15%.",
+      "Implemented CI/CD and MLOps workflows using Docker, GitHub Actions, and MLflow, reducing iteration time by 30%.",
     ],
   },
 ];
 
 const Experience = () => {
-  return (
-    <div className="max-w-5xl mx-auto px-6">
-      <motion.h2
-        className="text-3xl md:text-5xl font-bold text-center text-cyan-400 mb-12"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Experience
-      </motion.h2>
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 80%", "end 50%"],
+  });
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-      <div className="space-y-12">
-        {experiences.map((exp, idx) => (
+  return (
+    <section id="experience" className="py-32 px-6 md:px-16">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          className="flex items-baseline gap-4 mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="font-mono text-sm text-accent/50">02</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-100">
+            Experience
+          </h2>
+        </motion.div>
+
+        <div ref={containerRef} className="relative">
+          {/* Timeline track */}
+          <div className="hidden md:block absolute left-[200px] top-0 bottom-0 w-px bg-white/[0.03]" />
           <motion.div
-            key={idx}
-            className="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:shadow-cyan-500/30 transition duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: idx * 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              {exp.title}
-            </h3>
-            <p className="text-cyan-400 font-medium">
-              {exp.company} • {exp.period}
-            </p>
-            <ul className="list-disc list-inside text-gray-300 mt-3 space-y-1">
-              {exp.description.map((line, i) => (
-                <li key={i}>{line}</li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+            className="hidden md:block absolute left-[200px] top-0 w-px bg-gradient-to-b from-accent/30 to-accent/5 origin-top"
+            style={{ height: lineHeight }}
+          />
+
+          <div className="space-y-0">
+            {experiences.map((exp, idx) => (
+              <motion.div
+                key={idx}
+                className="group relative grid md:grid-cols-[185px_1fr] gap-3 md:gap-16 py-10 border-b border-white/[0.03] last:border-0"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              >
+                {/* Dot */}
+                <div className="hidden md:block absolute left-[196px] top-12 w-[9px] h-[9px] rounded-full border-2 border-accent/20 bg-background group-hover:border-accent/50 transition-colors duration-500 z-10" />
+
+                <div className="text-sm text-stone-700 md:pt-0.5 md:text-right font-mono">
+                  {exp.period}
+                </div>
+
+                <div className="md:pl-4">
+                  <h3 className="text-lg md:text-xl font-semibold text-stone-200 font-display">
+                    {exp.title}
+                    {exp.qualifier && (
+                      <span className="text-stone-600 font-normal text-base">
+                        {" "}
+                        · {exp.qualifier}
+                      </span>
+                    )}
+                  </h3>
+                  <p className="text-stone-600 text-sm mt-1">{exp.company}</p>
+                  <ul className="mt-4 space-y-2.5">
+                    {exp.bullets.map((bullet, i) => (
+                      <li
+                        key={i}
+                        className="text-sm text-stone-500 leading-relaxed flex gap-3"
+                      >
+                        <span className="mt-[0.55em] w-1 h-1 rounded-full bg-stone-800 shrink-0" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

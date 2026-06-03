@@ -1,100 +1,94 @@
 import { motion } from "framer-motion";
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
-// import { useRef } from "react"; // ✅ only useRef is required
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 text-center">
-      <motion.h2
-        className="text-3xl md:text-5xl font-bold text-cyan-400 mb-10"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Get in Touch
-      </motion.h2>
-
-      <motion.p
-        className="text-lg md:text-xl text-gray-300 mb-10"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Interested in collaborating, hiring, or just saying hi? I’m always open
-        to a conversation!
-      </motion.p>
-
-      {/* Resume buttons */}
-      <motion.div
-        className="mt-10 flex flex-col items-center gap-4"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <a
-          href="/Portfolio-VS/Resume_Vishesh.pdf"
-          download
-          className="bg-cyan-500 hover:bg-cyan-400 text-black font-medium px-6 py-3 rounded-lg shadow transition"
+    <footer id="contact" className="py-32 px-6 md:px-16">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          className="flex items-baseline gap-4 mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
-          📄 Download Resume
-        </a>
-        <a
-          href="/Portfolio-VS/Resume_Vishesh.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline text-cyan-400 hover:text-cyan-300"
-        >
-          Or view it in a new tab →
-        </a>
-      </motion.div>
+          <span className="font-mono text-sm text-accent/50">04</span>
+        </motion.div>
 
-      {/* Social links */}
-      <motion.div
-        className="mt-12 flex flex-wrap justify-center gap-6 text-cyan-400 text-3xl"
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <a
+        {/* Large heading — text mask reveal */}
+        <div className="overflow-hidden pb-2">
+          <motion.h2
+            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-stone-100 tracking-tight"
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+          >
+            Let&apos;s Connect
+          </motion.h2>
+        </div>
+
+        <motion.p
+          className="text-stone-600 max-w-lg mt-6 text-lg leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Always open to interesting conversations, collaborations, or new
+          opportunities.
+        </motion.p>
+
+        <motion.a
           href="mailto:visheshsaluja.mar03@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
+          className="inline-flex items-center gap-2.5 mt-8 text-stone-400 hover:text-stone-100 transition-colors duration-300 text-sm"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <SiGmail title="Email" />
-        </a>
-        <a
-          href="https://github.com/VisheshSaluja"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          <SiGithub title="GitHub" />
-        </a>
-        <a
-          href="https://linkedin.com/in/visheshsaluja"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          <SiLinkedin title="LinkedIn" />
-        </a>
-      </motion.div>
+          <FaEnvelope size={14} />
+          visheshsaluja.mar03@gmail.com
+        </motion.a>
 
-      <motion.p
-        className="mt-10 text-sm text-gray-500"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
-        viewport={{ once: true }}
-      >
-        © {new Date().getFullYear()} Vishesh Saluja. All rights reserved.
-      </motion.p>
-    </div>
+        <motion.div
+          className="flex items-center gap-5 mt-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <a
+            href="https://github.com/VisheshSaluja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-700 hover:text-stone-300 transition-colors duration-300"
+            aria-label="GitHub"
+          >
+            <SiGithub size={18} />
+          </a>
+          <a
+            href="https://linkedin.com/in/visheshsaluja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-700 hover:text-stone-300 transition-colors duration-300"
+            aria-label="LinkedIn"
+          >
+            <SiLinkedin size={18} />
+          </a>
+        </motion.div>
+
+        {/* Footer */}
+        <div className="border-t border-white/[0.03] mt-24 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-800">
+          <span>&copy; 2026 Vishesh Saluja</span>
+          <span>Built with React + Tailwind</span>
+        </div>
+      </div>
+    </footer>
   );
 };
 
