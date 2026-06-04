@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 import { FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
@@ -118,6 +118,11 @@ const Hero = () => {
                 href: "https://linkedin.com/in/visheshsaluja",
                 icon: <SiLinkedin size={18} />,
                 label: "LinkedIn",
+              },
+              {
+                href: "https://www.instagram.com/vishesh_saluja",
+                icon: <SiInstagram size={18} />,
+                label: "Instagram",
               },
               {
                 href: "mailto:visheshsaluja.mar03@gmail.com",

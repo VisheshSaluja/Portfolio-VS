@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
@@ -79,6 +79,15 @@ const Contact = () => {
             aria-label="LinkedIn"
           >
             <SiLinkedin size={18} />
+          </a>
+          <a
+            href="https://www.instagram.com/vishesh_saluja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-600 hover:text-stone-300 transition-colors duration-300"
+            aria-label="Instagram"
+          >
+            <SiInstagram size={18} />
           </a>
         </motion.div>
 
