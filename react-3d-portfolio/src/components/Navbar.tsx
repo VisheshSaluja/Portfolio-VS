@@ -40,7 +40,7 @@ const Navbar = () => {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="text-sm text-stone-500 hover:text-stone-200 transition-colors duration-300"
+                className="text-sm text-stone-400 hover:text-stone-200 transition-colors duration-300"
               >
                 {item.label}
               </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
               href="/Portfolio-VS/Resume_Vishesh.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-stone-500 hover:text-stone-200 transition-colors duration-300"
+              className="text-sm text-stone-400 hover:text-stone-200 transition-colors duration-300"
             >
               Resume &rarr;
             </a>

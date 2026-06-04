@@ -13,7 +13,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-mono text-sm text-accent/50">04</span>
+          <span className="font-mono text-sm text-accent/70">04</span>
         </motion.div>
 
         {/* Large heading — text mask reveal */}
@@ -33,7 +33,7 @@ const Contact = () => {
         </div>
 
         <motion.p
-          className="text-stone-600 max-w-lg mt-6 text-lg leading-relaxed"
+          className="text-stone-500 max-w-lg mt-6 text-lg leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -66,7 +66,7 @@ const Contact = () => {
             href="https://github.com/VisheshSaluja"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-700 hover:text-stone-300 transition-colors duration-300"
+            className="text-stone-600 hover:text-stone-300 transition-colors duration-300"
             aria-label="GitHub"
           >
             <SiGithub size={18} />
@@ -75,7 +75,7 @@ const Contact = () => {
             href="https://linkedin.com/in/visheshsaluja"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-700 hover:text-stone-300 transition-colors duration-300"
+            className="text-stone-600 hover:text-stone-300 transition-colors duration-300"
             aria-label="LinkedIn"
           >
             <SiLinkedin size={18} />
@@ -83,7 +83,7 @@ const Contact = () => {
         </motion.div>
 
         {/* Footer */}
-        <div className="border-t border-white/[0.03] mt-24 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-800">
+        <div className="border-t border-white/[0.03] mt-24 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-stone-700">
           <span>&copy; 2026 Vishesh Saluja</span>
           <span>Built with React + Tailwind</span>
         </div>

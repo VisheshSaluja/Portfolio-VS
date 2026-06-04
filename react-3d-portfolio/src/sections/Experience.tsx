@@ -62,7 +62,7 @@ const Experience = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-mono text-sm text-accent/50">02</span>
+          <span className="font-mono text-sm text-accent/70">02</span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-100">
             Experience
           </h2>
@@ -92,7 +92,7 @@ const Experience = () => {
                 {/* Dot */}
                 <div className="hidden md:block absolute left-[196px] top-12 w-[9px] h-[9px] rounded-full border-2 border-accent/20 bg-background group-hover:border-accent/50 transition-colors duration-500 z-10" />
 
-                <div className="text-sm text-stone-700 md:pt-0.5 md:text-right font-mono">
+                <div className="text-sm text-stone-600 md:pt-0.5 md:text-right font-mono">
                   {exp.period}
                 </div>
 
@@ -100,20 +100,20 @@ const Experience = () => {
                   <h3 className="text-lg md:text-xl font-semibold text-stone-200 font-display">
                     {exp.title}
                     {exp.qualifier && (
-                      <span className="text-stone-600 font-normal text-base">
+                      <span className="text-stone-500 font-normal text-base">
                         {" "}
                         · {exp.qualifier}
                       </span>
                     )}
                   </h3>
-                  <p className="text-stone-600 text-sm mt-1">{exp.company}</p>
+                  <p className="text-stone-500 text-sm mt-1">{exp.company}</p>
                   <ul className="mt-4 space-y-2.5">
                     {exp.bullets.map((bullet, i) => (
                       <li
                         key={i}
-                        className="text-sm text-stone-500 leading-relaxed flex gap-3"
+                        className="text-sm text-stone-400 leading-relaxed flex gap-3"
                       >
-                        <span className="mt-[0.55em] w-1 h-1 rounded-full bg-stone-800 shrink-0" />
+                        <span className="mt-[0.55em] w-1 h-1 rounded-full bg-stone-700 shrink-0" />
                         <span>{bullet}</span>
                       </li>
                     ))}

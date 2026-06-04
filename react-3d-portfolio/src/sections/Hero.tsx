@@ -79,7 +79,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           />
           <motion.p
-            className="text-xs md:text-sm text-stone-500 tracking-[0.25em] uppercase font-medium"
+            className="text-xs md:text-sm text-stone-400 tracking-[0.25em] uppercase font-medium"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -90,7 +90,7 @@ const Hero = () => {
 
         {/* Tagline */}
         <motion.p
-          className="text-base md:text-lg text-stone-500 max-w-lg mt-6 leading-relaxed"
+          className="text-base md:text-lg text-stone-400 max-w-lg mt-6 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -128,20 +128,20 @@ const Hero = () => {
               href={link.href}
               target={link.label !== "Email" ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="text-stone-600 hover:text-stone-200 transition-colors duration-300"
+              className="text-stone-500 hover:text-stone-200 transition-colors duration-300"
               aria-label={link.label}
             >
               {link.icon}
             </a>
           ))}
 
-          <div className="w-px h-4 bg-stone-800 mx-1" />
+          <div className="w-px h-4 bg-stone-700 mx-1" />
 
           <a
             href="/Portfolio-VS/Resume_Vishesh.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-stone-600 hover:text-stone-200 transition-colors duration-300"
+            className="text-sm text-stone-500 hover:text-stone-200 transition-colors duration-300"
           >
             Resume &rarr;
           </a>
@@ -156,11 +156,11 @@ const Hero = () => {
         transition={{ delay: 1.4, duration: 0.6 }}
         style={{ opacity }}
       >
-        <span className="text-[10px] tracking-[0.3em] uppercase text-stone-700">
+        <span className="text-[10px] tracking-[0.3em] uppercase text-stone-600">
           Scroll
         </span>
         <motion.div
-          className="w-px h-8 bg-gradient-to-b from-stone-700 to-transparent"
+          className="w-px h-8 bg-gradient-to-b from-stone-600 to-transparent"
           animate={{ scaleY: [1, 0.4, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />

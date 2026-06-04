@@ -37,7 +37,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-mono text-sm text-accent/50">01</span>
+          <span className="font-mono text-sm text-accent/70">01</span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-100">
             About
           </h2>
@@ -59,7 +59,7 @@ const About = () => {
                 demos, but products that handle real users, real latency
                 constraints, and real edge cases.
               </p>
-              <p className="text-stone-600 mt-5 leading-relaxed">
+              <p className="text-stone-500 mt-5 leading-relaxed">
                 Currently focused on agentic AI and RAG systems, with experience
                 spanning healthcare AI, geospatial ML at NASA, and fraud
                 detection at scale.
@@ -70,13 +70,13 @@ const About = () => {
           {/* Currently */}
           <motion.div variants={fadeUp}>
             <SpotlightCard className="h-full">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-3">
+              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-3">
                 Currently
               </p>
               <p className="text-stone-100 font-display font-bold text-xl">
                 ProspectIntel
               </p>
-              <p className="text-stone-500 text-sm mt-3 leading-relaxed">
+              <p className="text-stone-400 text-sm mt-3 leading-relaxed">
                 Building an AI sales intelligence platform — agentic workflows,
                 RAG pipelines, real-time prospect research.
               </p>
@@ -86,20 +86,20 @@ const About = () => {
           {/* Tech Stack */}
           <motion.div variants={fadeUp}>
             <SpotlightCard className="h-full">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-5">
+              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-5">
                 Tech Stack
               </p>
               <div className="space-y-4">
                 {Object.entries(techStack).map(([category, items]) => (
                   <div key={category}>
-                    <p className="text-[11px] text-stone-700 uppercase tracking-wider mb-1.5">
+                    <p className="text-[11px] text-stone-600 uppercase tracking-wider mb-1.5">
                       {category}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {items.map((item) => (
                         <span
                           key={item}
-                          className="text-xs px-2 py-1 rounded-md bg-white/[0.02] text-stone-500 border border-white/[0.05] hover:border-white/[0.1] hover:text-stone-300 transition-all duration-300"
+                          className="text-xs px-2 py-1 rounded-md bg-white/[0.02] text-stone-400 border border-white/[0.05] hover:border-white/[0.1] hover:text-stone-300 transition-all duration-300"
                         >
                           {item}
                         </span>
@@ -114,13 +114,13 @@ const About = () => {
           {/* Beyond Code */}
           <motion.div variants={fadeUp}>
             <SpotlightCard className="h-full">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-5">
+              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-5">
                 Beyond Code
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3 group">
                   <GiBlackBelt
-                    className="text-amber-700/60 shrink-0 group-hover:text-amber-600 transition-colors duration-300"
+                    className="text-amber-500/50 shrink-0 group-hover:text-amber-400 transition-colors duration-300"
                     size={18}
                   />
                   <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
@@ -129,7 +129,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3 group">
                   <FaGuitar
-                    className="text-rose-800/60 shrink-0 group-hover:text-rose-600 transition-colors duration-300"
+                    className="text-rose-500/50 shrink-0 group-hover:text-rose-400 transition-colors duration-300"
                     size={18}
                   />
                   <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
@@ -138,7 +138,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3 group">
                   <FaGlobeAsia
-                    className="text-emerald-800/60 shrink-0 group-hover:text-emerald-600 transition-colors duration-300"
+                    className="text-emerald-500/50 shrink-0 group-hover:text-emerald-400 transition-colors duration-300"
                     size={18}
                   />
                   <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
@@ -152,7 +152,7 @@ const About = () => {
           {/* Education */}
           <motion.div variants={fadeUp}>
             <SpotlightCard className="h-full">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-5">
+              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-5">
                 Education
               </p>
               <div className="space-y-5">
@@ -160,7 +160,7 @@ const About = () => {
                   <p className="text-stone-200 font-medium text-sm">
                     M.S. Computer Science
                   </p>
-                  <p className="text-stone-700 text-xs mt-1">
+                  <p className="text-stone-600 text-xs mt-1">
                     George Mason University · 2023 – 2025
                   </p>
                 </div>
@@ -168,7 +168,7 @@ const About = () => {
                   <p className="text-stone-200 font-medium text-sm">
                     B.Tech Information Technology
                   </p>
-                  <p className="text-stone-700 text-xs mt-1">
+                  <p className="text-stone-600 text-xs mt-1">
                     GGS Indraprastha University · 2019 – 2023
                   </p>
                 </div>

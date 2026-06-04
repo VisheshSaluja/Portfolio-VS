@@ -47,7 +47,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-mono text-sm text-accent/50">03</span>
+          <span className="font-mono text-sm text-accent/70">03</span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-100">
             Projects
           </h2>
@@ -75,7 +75,7 @@ const Projects = () => {
               <h3 className="font-display text-3xl md:text-4xl font-bold text-stone-100 mb-2">
                 {featured.title}
               </h3>
-              <p className="text-stone-500 text-sm mb-6 italic">
+              <p className="text-stone-400 text-sm mb-6 italic">
                 {featured.tagline}
               </p>
 
@@ -87,7 +87,7 @@ const Projects = () => {
                 {featured.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-2.5 py-1 rounded-md bg-white/[0.02] text-stone-500 border border-white/[0.05]"
+                    className="text-xs px-2.5 py-1 rounded-md bg-white/[0.02] text-stone-400 border border-white/[0.05]"
                   >
                     {t}
                   </span>
@@ -118,14 +118,14 @@ const Projects = () => {
 
             {/* Features list */}
             <div className="border-t md:border-t-0 md:border-l border-white/[0.04] pt-6 md:pt-0 md:pl-10">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-700 uppercase mb-4">
+              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-4">
                 Key Features
               </p>
               <ul className="space-y-3">
                 {featured.features.map((feature, i) => (
                   <li
                     key={i}
-                    className="text-sm text-stone-500 leading-relaxed flex gap-3"
+                    className="text-sm text-stone-400 leading-relaxed flex gap-3"
                   >
                     <span className="mt-[0.55em] w-1 h-1 rounded-full bg-accent/30 shrink-0" />
                     <span>{feature}</span>
@@ -143,7 +143,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-[10px] font-medium tracking-[0.25em] text-stone-700 uppercase mb-6">
+          <p className="text-[10px] font-medium tracking-[0.25em] text-stone-600 uppercase mb-6">
             Other Work
           </p>
           <div className="space-y-4">
@@ -159,11 +159,11 @@ const Projects = () => {
                   <span className="font-display text-stone-200 font-medium group-hover:text-stone-100 transition-colors duration-300">
                     {project.title}
                   </span>
-                  <span className="text-sm text-stone-700 hidden sm:inline">
+                  <span className="text-sm text-stone-600 hidden sm:inline">
                     {project.description}
                   </span>
                 </div>
-                <span className="text-stone-700 group-hover:text-stone-400 transition-colors duration-300 text-sm">
+                <span className="text-stone-600 group-hover:text-stone-400 transition-colors duration-300 text-sm">
                   &rarr;
                 </span>
               </a>
