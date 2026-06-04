@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import SpotlightCard from "../components/SpotlightCard";
-import { GiBlackBelt } from "react-icons/gi";
-import { FaGuitar, FaGlobeAsia } from "react-icons/fa";
 
 const techStack: Record<string, string[]> = {
   "AI & LLM": ["RAG", "LangGraph", "MCP", "Prompt Engineering", "Guardrails"],
@@ -84,7 +82,7 @@ const About = () => {
           </motion.div>
 
           {/* Tech Stack */}
-          <motion.div variants={fadeUp}>
+          <motion.div variants={fadeUp} className="md:col-span-2">
             <SpotlightCard className="h-full">
               <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-5">
                 Tech Stack
@@ -107,44 +105,6 @@ const About = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-            </SpotlightCard>
-          </motion.div>
-
-          {/* Beyond Code */}
-          <motion.div variants={fadeUp}>
-            <SpotlightCard className="h-full">
-              <p className="text-[10px] font-medium tracking-[0.25em] text-stone-500 uppercase mb-5">
-                Beyond Code
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 group">
-                  <GiBlackBelt
-                    className="text-amber-500/50 shrink-0 group-hover:text-amber-400 transition-colors duration-300"
-                    size={18}
-                  />
-                  <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
-                    International Taekwondo Medalist
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 group">
-                  <FaGuitar
-                    className="text-rose-500/50 shrink-0 group-hover:text-rose-400 transition-colors duration-300"
-                    size={18}
-                  />
-                  <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
-                    Guitar Player
-                  </span>
-                </div>
-                <div className="flex items-center gap-3 group">
-                  <FaGlobeAsia
-                    className="text-emerald-500/50 shrink-0 group-hover:text-emerald-400 transition-colors duration-300"
-                    size={18}
-                  />
-                  <span className="text-stone-400 text-sm group-hover:text-stone-300 transition-colors duration-300">
-                    Traveler & Explorer
-                  </span>
-                </div>
               </div>
             </SpotlightCard>
           </motion.div>
