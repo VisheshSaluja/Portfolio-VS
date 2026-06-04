@@ -13,7 +13,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="font-mono text-sm text-accent/70">04</span>
+          <span className="font-mono text-sm text-accent/70">05</span>
         </motion.div>
 
         {/* Large heading — text mask reveal */}
