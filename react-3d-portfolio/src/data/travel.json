@@ -1,0 +1,75 @@
+{
+  "cities": [
+    { "id": "DEL", "name": "Delhi", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 28.61, "lng": 77.21, "image": "", "imageCaption": "" },
+    { "id": "MUM", "name": "Maharashtra", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 19.08, "lng": 72.88, "image": "", "imageCaption": "" },
+    { "id": "HYD", "name": "Hyderabad", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 17.39, "lng": 78.49, "image": "", "imageCaption": "" },
+    { "id": "GAU", "name": "Guwahati", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 26.14, "lng": 91.74, "image": "", "imageCaption": "" },
+    { "id": "PNJ", "name": "Punjab", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 31.15, "lng": 75.34, "image": "", "imageCaption": "" },
+    { "id": "HRY", "name": "Haryana", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 29.06, "lng": 76.09, "image": "", "imageCaption": "" },
+    { "id": "BPL", "name": "Bhopal", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 23.26, "lng": 77.41, "image": "", "imageCaption": "" },
+    { "id": "PNQ", "name": "Pune", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 18.52, "lng": 73.86, "image": "", "imageCaption": "" },
+    { "id": "JMU", "name": "Jammu & Kashmir", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 34.08, "lng": 74.80, "image": "", "imageCaption": "" },
+    { "id": "UTK", "name": "Uttarakhand", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 30.07, "lng": 79.49, "image": "", "imageCaption": "" },
+    { "id": "UTP", "name": "Uttar Pradesh", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 26.85, "lng": 80.91, "image": "", "imageCaption": "" },
+    { "id": "SML", "name": "Shimla", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 31.10, "lng": 77.17, "image": "", "imageCaption": "" },
+    { "id": "KSL", "name": "Kasol", "country": "India", "countryCode": "IN", "flag": "🇮🇳", "continent": "Asia", "lat": 32.01, "lng": 77.31, "image": "", "imageCaption": "" },
+
+    { "id": "ICN", "name": "Seoul", "country": "South Korea", "countryCode": "KR", "flag": "🇰🇷", "continent": "Asia", "lat": 37.57, "lng": 126.98, "image": "", "imageCaption": "" },
+    { "id": "INC", "name": "Incheon", "country": "South Korea", "countryCode": "KR", "flag": "🇰🇷", "continent": "Asia", "lat": 37.46, "lng": 126.70, "image": "", "imageCaption": "" },
+    { "id": "MJG", "name": "Muju-gun", "country": "South Korea", "countryCode": "KR", "flag": "🇰🇷", "continent": "Asia", "lat": 35.86, "lng": 127.66, "image": "", "imageCaption": "" },
+    { "id": "CHN", "name": "Chuncheon-si", "country": "South Korea", "countryCode": "KR", "flag": "🇰🇷", "continent": "Asia", "lat": 37.87, "lng": 127.73, "image": "", "imageCaption": "" },
+
+    { "id": "TPE", "name": "Taipei", "country": "Taiwan", "countryCode": "TW", "flag": "🇹🇼", "continent": "Asia", "lat": 25.03, "lng": 121.57, "image": "", "imageCaption": "" },
+
+    { "id": "SIN", "name": "Singapore", "country": "Singapore", "countryCode": "SG", "flag": "🇸🇬", "continent": "Asia", "lat": 1.35, "lng": 103.82, "image": "", "imageCaption": "" },
+
+    { "id": "DCA", "name": "Washington DC", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 38.91, "lng": -77.04, "image": "", "imageCaption": "" },
+    { "id": "IAD", "name": "Virginia", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 37.43, "lng": -78.66, "image": "", "imageCaption": "" },
+    { "id": "JFK", "name": "New York City", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 40.71, "lng": -74.01, "image": "", "imageCaption": "" },
+    { "id": "BDL", "name": "Connecticut", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 41.60, "lng": -72.76, "image": "", "imageCaption": "" },
+    { "id": "EWR", "name": "New Jersey", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 40.06, "lng": -74.41, "image": "", "imageCaption": "" },
+    { "id": "OBX", "name": "Outer Banks", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 35.56, "lng": -75.47, "image": "", "imageCaption": "" },
+    { "id": "MIA", "name": "Miami", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 25.76, "lng": -80.19, "image": "", "imageCaption": "" },
+    { "id": "LAS", "name": "Las Vegas", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 36.17, "lng": -115.14, "image": "", "imageCaption": "" },
+    { "id": "SHN", "name": "Shenandoah", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 38.53, "lng": -78.35, "image": "", "imageCaption": "" },
+    { "id": "BWI", "name": "Maryland", "country": "United States", "countryCode": "US", "flag": "🇺🇸", "continent": "North America", "lat": 39.05, "lng": -76.64, "image": "", "imageCaption": "" }
+  ],
+
+  "arcs": [
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 19.08, "endLng": 72.88 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 17.39, "endLng": 78.49 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 26.14, "endLng": 91.74 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 34.08, "endLng": 74.80 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 23.26, "endLng": 77.41 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 37.57, "endLng": 126.98 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 25.03, "endLng": 121.57 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 1.35, "endLng": 103.82 },
+    { "startLat": 28.61, "startLng": 77.21, "endLat": 38.91, "endLng": -77.04 },
+    { "startLat": 37.57, "startLng": 126.98, "endLat": 37.46, "endLng": 126.70 },
+    { "startLat": 37.57, "startLng": 126.98, "endLat": 35.86, "endLng": 127.66 },
+    { "startLat": 37.57, "startLng": 126.98, "endLat": 37.87, "endLng": 127.73 },
+    { "startLat": 38.91, "startLng": -77.04, "endLat": 37.43, "endLng": -78.66 },
+    { "startLat": 38.91, "startLng": -77.04, "endLat": 40.71, "endLng": -74.01 },
+    { "startLat": 38.91, "startLng": -77.04, "endLat": 25.76, "endLng": -80.19 },
+    { "startLat": 38.91, "startLng": -77.04, "endLat": 36.17, "endLng": -115.14 },
+    { "startLat": 40.71, "startLng": -74.01, "endLat": 41.60, "endLng": -72.76 }
+  ],
+
+  "bucketList": [
+    { "country": "Japan", "flag": "🇯🇵" },
+    { "country": "Alaska", "flag": "🏔️" },
+    { "country": "Iceland", "flag": "🇮🇸" },
+    { "country": "Brazil", "flag": "🇧🇷" },
+    { "country": "Switzerland", "flag": "🇨🇭" },
+    { "country": "Hawaii", "flag": "🌺" },
+    { "country": "Peru", "flag": "🇵🇪" },
+    { "country": "Cuba", "flag": "🇨🇺" },
+    { "country": "South Africa", "flag": "🇿🇦" },
+    { "country": "Egypt", "flag": "🇪🇬" },
+    { "country": "Barcelona", "flag": "🇪🇸" },
+    { "country": "Portugal", "flag": "🇵🇹" },
+    { "country": "Italy", "flag": "🇮🇹" },
+    { "country": "France", "flag": "🇫🇷" },
+    { "country": "Prague", "flag": "🇨🇿" }
+  ]
+}
