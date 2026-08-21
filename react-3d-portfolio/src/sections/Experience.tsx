@@ -8,10 +8,12 @@ const experiences = [
     company: "ProspectIntel",
     period: "Jan 2026 – Present",
     bullets: [
-      "Building a production AI sales intelligence platform using agentic workflows + RAG, enabling real-time prospect research across multiple users and concurrent queries.",
-      "Engineered a RAG-based intelligence pipeline using hybrid retrieval over PostgreSQL, improving reliability from 70% to 95% and reducing latency by 2–3x.",
-      "Implemented a lazy-loading inference architecture with streaming LLM responses, cutting perceived latency by 40% via gated model execution.",
-      "Built evaluation and observability pipelines (Langfuse) to track prompt performance, latency, and token usage, reducing token consumption by 35%.",
+      "Spearheaded 0→1 development of a production AI sales intelligence platform, translating messy market data into structured insights using multi-agent workflows and schema-constrained LLMs.",
+      "Engineered dynamic RAG pipelines using Crawl4AI and hybrid PostgreSQL retrieval, improving output reliability from 70% to 95% and reducing latency by 2–3x.",
+      "Architected end-to-end agent orchestration with lazy-loading inference and streaming responses, cutting perceived latency by 40%, and exposed the platform to external AI clients via a standalone MCP server (FastMCP, Auth0 OIDC/OAuth).",
+      "Built enterprise B2B infrastructure with Auth0 multi-tenant onboarding, org-aware access controls, and Row Level Security across the stack.",
+      "Implemented Stripe usage-based billing with custom token metering across LLMs, web research, and external APIs for precise AI cost attribution.",
+      "Established observability pipelines (Langfuse, Sentry, PostHog) to track prompt performance and production errors, reducing token consumption by 35%.",
     ],
   },
   {
@@ -19,10 +21,11 @@ const experiences = [
     company: "Bruise @ GMU — College of Public Health",
     period: "Jun 2025 – Present",
     bullets: [
-      "Engineered a HIPAA-compliant full-stack AI platform (FastAPI, React/Next.js) deployed across multiple universities, used by 50+ clinicians for real-time medical imaging workflows.",
-      "Built a dedicated AI inference microservice (Flask) serving YOLO-based bruise detection models with dynamic model routing, offloading heavy compute from the main backend.",
-      "Developed a Python-based HTTP gateway bridging a Go backend with AI services, enabling cross-language, asynchronous processing.",
-      "Built LLM summarization pipelines for structured clinical notes and integrated Unity 3D body mapping for clinical visualization.",
+      "Engineered a HIPAA-compliant full-stack AI platform (FastAPI, React/Next.js) deployed across universities in the USA and Africa, used by 50+ clinicians and 10+ researchers.",
+      "Led end-to-end infrastructure by independently deploying on a fresh production server, architecting a modular system separating APIs, inference, and data pipelines.",
+      "Built a Python HTTP gateway bridging a Go backend with a dedicated YOLO-based inference microservice for asynchronous, cross-language communication.",
+      "Built LLM-powered clinical summarization pipelines with voice agents and agentic orchestration, synthesizing injury data into actionable reports for researchers.",
+      "Integrated 3D spatial mapping via Unity, significantly enhancing visualization and interpretation of complex clinical injury data.",
     ],
   },
   {
