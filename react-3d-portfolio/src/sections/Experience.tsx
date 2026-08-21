@@ -10,17 +10,19 @@ const experiences = [
     bullets: [
       "Building a production AI sales intelligence platform using agentic workflows + RAG, enabling real-time prospect research across multiple users and concurrent queries.",
       "Engineered a RAG-based intelligence pipeline using hybrid retrieval over PostgreSQL, improving reliability from 70% to 95% and reducing latency by 2–3x.",
+      "Implemented a lazy-loading inference architecture with streaming LLM responses, cutting perceived latency by 40% via gated model execution.",
       "Built evaluation and observability pipelines (Langfuse) to track prompt performance, latency, and token usage, reducing token consumption by 35%.",
     ],
   },
   {
     title: "AI Software Developer",
-    company: "George Mason University — College of Public Health",
+    company: "Bruise @ GMU — College of Public Health",
     period: "Jun 2025 – Present",
     bullets: [
       "Engineered a HIPAA-compliant full-stack AI platform (FastAPI, React/Next.js) deployed across multiple universities, used by 50+ clinicians for real-time medical imaging workflows.",
-      "Built a YOLO-based bruise detection pipeline with dynamic model routing and integrated Unity 3D body mapping for clinical visualization.",
-      "Developed LLM summarization pipelines for structured clinical note generation and designed real-time API-driven interfaces.",
+      "Built a dedicated AI inference microservice (Flask) serving YOLO-based bruise detection models with dynamic model routing, offloading heavy compute from the main backend.",
+      "Developed a Python-based HTTP gateway bridging a Go backend with AI services, enabling cross-language, asynchronous processing.",
+      "Built LLM summarization pipelines for structured clinical notes and integrated Unity 3D body mapping for clinical visualization.",
     ],
   },
   {
@@ -29,7 +31,9 @@ const experiences = [
     period: "Feb 2024 – Jan 2025",
     bullets: [
       "Built and productionized scalable ML pipelines for TB-scale geospatial datasets — snow water estimation, wildfire detection, ozone analysis.",
-      "Optimized workflows on HPC systems (Hopper), improving compute efficiency by 20% and contributing to a 25% increase in monthly active users.",
+      "Optimized workflows on HPC systems (Hopper), leveraging distributed processing to improve compute efficiency by 20%.",
+      "Designed and integrated multi-database support and an in-app code editor, expanding platform flexibility for developers.",
+      "Improved UI responsiveness and feature experience, contributing to a 25% increase in monthly active users.",
       "Mentored 4 interns in ML experimentation and system design, co-authoring a peer-reviewed research publication.",
     ],
   },
@@ -39,6 +43,8 @@ const experiences = [
     period: "Nov 2021 – Jul 2023",
     bullets: [
       "Built real-time fraud detection systems using Flask APIs and XGBoost, processing 10M+ financial transactions/month and reducing high-risk exposure by 15%.",
+      "Developed production-grade APIs and asynchronous processing pipelines supporting real-time, explainable ML-driven decisions.",
+      "Worked with AWS infrastructure (EC2, S3, CloudWatch) and Docker-based deployments for scalable, monitored model serving.",
       "Implemented CI/CD and MLOps workflows using Docker, GitHub Actions, and MLflow, reducing iteration time by 30%.",
     ],
   },
